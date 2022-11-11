@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/styles.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/table-sortable-01.css" />
+  <title>The Depot - Events</title>
+  
+</head>
+
+<body style="background-color: floralwhite;">
+  <header>
+    <nav>
+      <a class="logo" href="index.html"><span>THE DEPOT</span></a>
+      <ul style="display: inline-flexbox" class="float-right">
+        <li>
+          <a href="1-trucks.html">TRUCKS</a>
+        </li>
+        <li>
+          <a href="3-events.html">EVENTS</a>
+        </li>
+        <li>
+          <a href="4-location.html">LOCATION</a>
+        </li>
+        <li>
+          <a href="2-about.html">ABOUT</a>
+        </li>
+        <li>
+          <a href="5-gallery.html">GALLERY</a>
+        </li>
+      </ul>
+      <div class="dropdown">
+        <button class="dropbtn">Menu</button>
+        <div class="dropdown-content">
+          <a href="1-trucks.html">TRUCKS</a>
+          <a href="2-about.html">ABOUT</a>
+          <a href="3-events.html">EVENTS</a>
+          <a href="4-location.html">LOCATION</a>
+          <a href="5-gallery.html">GALLERY</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <article>
+    <div>
+      <h1>EVENTS</h1>
+    </div>
+    <section style="padding: 0px 40px">
+      <h3>The Depot is proud to host numerous concerts, 
+        faires, markets, and other events every month!
+        <br>
+        <br>
+        Always striving to put local creatives on the map.
+      </h3>
+    </section>
+  </article>
+ 
+  <article>
+    <div>
+      <table id="your-table-items">
+          <thead>
+          <tr>
+            <th>concerts & festivals</th>
+            <th>markets & fairs</th>
+            <th>dates</th>
+            <th>more info.</th>
+          </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Band Name</td>
+              <td>-</td>
+              <td>00/00/00</td>
+              <td>bandname.com</td>
+            </tr>
+            <tr>
+              <td>Band Name</td>
+              <td>-</td>
+              <td>00/00/00</td>
+              <td>bandname.com</td>
+            </tr>
+            <tr>
+              <td>-</td>
+              <td>market</td>
+              <td>00/00/00</td>
+              <td>market.com</td>
+            </tr>
+            <tr>
+              <td>-</td>
+              <td>county fair</td>
+              <td>00/00/00</td>
+              <td>santacruzcountyfair.com</td>
+            </tr>
+            <tr>
+              <td>festival</td>
+              <td>-</td>
+              <td>00/00/00</td>
+              <td>festival.com</td>
+            </tr>
+            <tr>
+              <td>Band Name</td>
+              <td>-</td>
+              <td>00/00/00</td>
+              <td>bandname.com</td>
+            </tr>
+            <tr>
+              <td>-</td>
+              <td>market</td>
+              <td>00/00/00</td>
+              <td>market.com</td>
+            </tr>
+            
+          </tbody>
+      </table>
+    </div>
+  </article>
+  <div class="to-top"><a href="#">Top</a></div>
+  <footer>
+    <div class="social-icon">
+      <!-- Facebook -->
+      <a href="" target="_blank" class="fa fa-facebook-f fa-lg fa-2x padding-right"></a>
+      <!--Instagram-->
+      <a href="" target="_blank" class="fa fa-instagram fa-lg fa-2x padding-right"></a>
+      <!-- Twitter -->
+      <a href="" target="_blank" class="fa fa-twitter fa-lg fa-2x padding-right"></a>
+      <!-- Pinterest -->
+      <a href="" target="_blank" class="fa fa-pinterest fa-lg fa-2x padding-right"></a>
+      <!-- Linkedin -->
+      <a href="" target="_blank" class="fa fa-linkedin fa-lg fa-2x padding-right"></a>
+      <!-- GitHub -->
+      <a href="" target="_blank" class="fa fa-github-alt fa-lg fa-2x"></a>
+    </div>
+  </footer>
+  
+  <!-- jquery.min.js should be loaded before jquery.tablesorter.min.js because tablesorter requires basice jquery -->
+  <script type="text/JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/JavaScript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"></script>
+  <!-- BEG JavaScript -->
+  <script>
+    $(document).ready(function () {
+      $("table#your-table-items").tablesorter({
+        sortList: [[1, 0]],
+        CssAsc: "tablesorter-headerAsc",
+        CssDesc: "tablesorter-headerDesc"
+      });
+    });
+  </script>
+  <!-- END JavaScript -->
+</body>
+
+
+</html>
