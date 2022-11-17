@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
-  margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: montserrat;
 }
 ::selection{
   color: #fff;
@@ -14,7 +12,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 20vh;
+  background-color: #333;
 }
 .wrapper{
   max-width: 1100px;
@@ -46,7 +45,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0.9);
-  background: #fff;
+  background: #333;
   max-width: 700px;
   width: 100%;
   z-index: 5;
@@ -72,15 +71,21 @@
   display: flex;
   font-size: 18px;
   font-weight: 400;
+  font-family: arial;
+  color: #fff;
 }
 .details .title p{
   margin: 0 5px;
+  font-family: arial;
+  font-size: 18px;
 }
 .details .title p.current-img{
   font-weight: 500;
+  font-size: 18px;
+  font-family: arial;
 }
 .details .icon{
-  color: #007bff;
+  color: #fff;
   font-size: 20px;
   cursor: pointer;
 }
@@ -94,6 +99,8 @@
   top: 50%;
   transform: translateY(-50%);
   color: #fff;
+  background-color: #333;
+  opacity: 50%;
   font-size: 30px;
   cursor: pointer;
   height: 50px;
@@ -137,4 +144,5 @@
 
 article {
   padding: 20px 100px;
+  display: inline-block;
 }
