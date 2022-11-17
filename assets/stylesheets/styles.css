@@ -252,6 +252,15 @@ h5 {
 
 }
 
+h6 { font-family: oswald;
+  letter-spacing: 3px;
+  margin: px 0px 1em 0px;
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
 p {
   display: block;
   margin-block-start: 1em;
