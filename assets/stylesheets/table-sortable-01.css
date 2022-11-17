@@ -1,0 +1,92 @@
+table#your-table-items {
+      border-collapse: collapse;
+      /* in inspector mode - easier to see the difference between collapse and no collapse */
+      border: 1px solid #f2f2f2;
+      text-align: center;
+      margin: 40px;
+    }
+
+    table#your-table-items th:nth-child(1),
+    table#your-table-items td:nth-child(1) {
+      width: 30%;
+    }
+
+    table#your-table-items th:nth-child(2),
+    table#your-table-items td:nth-child(2) {
+      width: 30%;
+    }
+
+    table#your-table-items th:nth-child(3),
+    table#your-table-items td:nth-child(3) {
+      width: 25%;
+    }
+
+    table#your-table-items th:nth-child(4),
+    table#your-table-items td:nth-child(4) {
+      width: 30%;
+    }
+
+    table#your-table-items thead {
+      font-size: 15pt;
+      text-transform: uppercase;
+      font-family: montserrat;
+    }
+
+    table#your-table-items thead th {
+      color: #f2f2f2;
+      background-color: rgba(151, 117, 117, 0.579);
+      padding: 8px;
+      letter-spacing: 2pt;
+    }
+
+    table#your-table-items thead th:hover {
+      color: #fff;
+      background-color: rgb(151, 117, 117);
+      cursor: pointer;
+    }
+
+    table#your-table-items thead th.tablesorter-headerAsc,
+    table#your-table-items thead th.tablesorter-headerDesc {
+      background-color: rgb(151, 117, 117);
+    }
+
+    table#your-table-items tbody {
+      font-family: montserrat;
+      font-weight: 300;
+      font-size: 12pt;
+      text-transform: uppercase;
+      color: #333;
+      line-height: 15px;
+      letter-spacing: 2pt;
+    }
+
+    /*** make sure table#your-table-items tbody tr:nth-child(even) defined before table#your-table-items tbody tr:hover */
+    /*** otherwise, it would need to define table#your-table-items tbody tr:nth-child(even):hover*/
+    table#your-table-items tbody tr:nth-child(even) {
+      background: rgba(201, 150, 150, 0.25);
+    }
+
+    table#your-table-items tbody tr:nth-child(odd) {
+      background: rgba(201, 150, 150, 0.15);
+    }
+
+    table#your-table-items tbody tr:hover {
+      color: #f2f2f2;
+      background-color:rgb(151, 117, 117);
+    }
+
+    table#your-table-items tbody td {
+      padding: 8px 20px;
+      border-top: 1px solid #f2f2f2;
+      border-right: 1px solid #f2f2f2;
+    }
+
+    table#your-table-items tbody td img {
+      width: 100px;
+      margin: 0 10px 0 0;
+      border: 1px solid #f2f2f2;
+    }
+
+    article {
+      padding: 20px 100px;
+    }
