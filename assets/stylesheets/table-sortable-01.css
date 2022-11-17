@@ -34,20 +34,20 @@ table#your-table-items {
 
     table#your-table-items thead th {
       color: #f2f2f2;
-      background-color: rgba(151, 117, 117, 0.579);
+      background-color: #659aa697;
       padding: 8px;
       letter-spacing: 2pt;
     }
 
     table#your-table-items thead th:hover {
       color: #fff;
-      background-color: rgb(151, 117, 117);
+      background-color: #659aa6;
       cursor: pointer;
     }
 
     table#your-table-items thead th.tablesorter-headerAsc,
     table#your-table-items thead th.tablesorter-headerDesc {
-      background-color: rgb(151, 117, 117);
+      background-color: #659aa6;
     }
 
     table#your-table-items tbody {
@@ -63,16 +63,16 @@ table#your-table-items {
     /*** make sure table#your-table-items tbody tr:nth-child(even) defined before table#your-table-items tbody tr:hover */
     /*** otherwise, it would need to define table#your-table-items tbody tr:nth-child(even):hover*/
     table#your-table-items tbody tr:nth-child(even) {
-      background: rgba(201, 150, 150, 0.25);
+      background: #659aa65a;
     }
 
     table#your-table-items tbody tr:nth-child(odd) {
-      background: rgba(201, 150, 150, 0.15);
+      background: #659aa62d;
     }
 
     table#your-table-items tbody tr:hover {
       color: #f2f2f2;
-      background-color:rgb(151, 117, 117);
+      background:#659aa6;
     }
 
     table#your-table-items tbody td {
